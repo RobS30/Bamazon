@@ -12,7 +12,7 @@ Bamazon is n Amazon-like storefront that will take in orders from customers and 
 
 In order to run the application, please follow the steps below.
 
-<h2> MySQL Database Setup <h2>
+<h2> MySQL Database Setup </h2>
 In order to run this application, you should have the MySQL database already set up on your machine. Use the bamazondbseed.sql file to create the Bamazon database and products table. 
 
 <h2>Customer Interface</h2>
@@ -30,20 +30,20 @@ The screenshots below provide an overview of the how the application works.
 
 1) Upon first starting the program, the customer will be prompted to either "View items for sale" or to "Leave the store"
 
-(images/1.jpg)
+![1](images/1.jpg)
 
 2) When the user selects "View items for sale", a table wll be displayed with the items ID, name, and price
 
-(images/2.jpg)
+![2](images/2.jpg)
 
 3) The user will be prompted to enter the ID of the item along with the quantity they would like to purchase.  
 
-(images/3.jpg)
+![3](images/3.jpg)
 
 4) If the requested quantity is available, then the user will recieve a confirmation of their purchase along with their total purchase price.  They will again be prompted to either "View items for sale" or to "Leave the store".
 
-(images/4.jpg)
+![4](images/4.jpg)
 
 5) If there is not enough inventory to fill the order, the user will be advised of this along with the available quantity.  They will then be prompted to either "View items for sale" or to "Leave the store"
 
-(images/5.jpg)
+![5](images/5.jpg)
