@@ -1,12 +1,13 @@
 # Bamazon
-
-<h1> Bamazon</h1>
 Bamazon is an Amazon-like CLI application that will take in orders from customers and deplete stock from the store's inventory.  Additional functionality was added to track product sales across the store's departments, and then provide a summary of the highest grossing departments in the store.
 
 <h1>Technology used include:</h1>
 - Javascript
+<br>
 - Node.js
+<br>
 - MySQL
+<br>
 
 <h1>Application Overview and Demo</h1>
 The store includes three interconnected node applications--Customer Interface, Manager Interface, and Supervisor Interface.  All three programs interact with the same database on the backend.
