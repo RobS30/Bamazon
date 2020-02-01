@@ -1,4 +1,6 @@
   
+//add functionality to show inventory levels 
+
 // npm requirements
 var inquirer = require("inquirer");
 var mysql = require("mysql");
@@ -105,7 +107,8 @@ function consoleTable(results) {
 		var resultObject = {
 			ID: results[i].item_id,
 			Item: results[i].product_name,
-			Price: "$" + results[i].price
+			Price: "$" + results[i].price,
+			QuantityRemaining: results[i].stock_quantity
 		};
 		values.push(resultObject);
 	}
