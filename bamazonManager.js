@@ -47,10 +47,33 @@ function welcome() {
 	});
 }
 
+// function to view available items
+function viewItems() {
+	var query = "SELECT * FROM products";
+	connection.query(query, function(error, results) {
+		if (error) throw error;
+		consoleTable(results);
+	});
+}
 
+// function to output table in console
+function consoleTable(results) {
+	var values = [];
+	for (var i = 0; i < results.length; i++) {
+		var resultObject = {
+			ID: results[i].item_id,
+			Item: results[i].product_name,
+			Price: "$" + results[i].price,
+			Quantity: results[i].stock_quantity
+		};
+		values.push(resultObject);
+	}
+	console.table("/nItems for Sale", values);
+}
 
+// function to view low inventory
 
-// exit function
+// function to exit store
 function exit() {
 	console.log("\nThanks for shopping with us!");
 	connection.end();
