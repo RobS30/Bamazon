@@ -29,14 +29,29 @@ function welcome() {
 		{
 			name: "action",
 			type: "list",
-			choices: ["View Products for Sale", "View Low Inventory", "Add to Inventory", "Add New Product"],
+			choices: ["View Items for Sale", "View Low Inventory", "Add to Inventory", "Add New Product", "Leave the Store"],
 			message: "Select an option."
 		}
 	]).then(function(action) {
-		if (action.action === "View items for sale") {
+		if (action.action === "View Items for Sale") {
 			viewItems();
-		} else if (action.action === "Leave the store") {
+		} else if (action.action === "View Low Inventory") {
+			viewLowInvetory();
+		} else if (action.action === "Add to Inventory") {
+			addInventory();
+		} else if (action.action === "Add New Product") {
+			addNewProduct();
+		} else if (action.action === "Leave the Store") {
 			exit();
 		}
 	});
+}
+
+
+
+
+// exit function
+function exit() {
+	console.log("\nThanks for shopping with us!");
+	connection.end();
 }
