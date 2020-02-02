@@ -14,6 +14,7 @@ The store includes three interconnected node applications--Customer Interface, M
 
 <h2>Customer Interface</h2>
 <br>
+<br>
 The Customer Interface (bamazonCustomer.js) allows you to view the current inventory of store items-IDs, descriptions, and departments.  You can the purhcase one of the in stock items by entering the ID and quantity.  If the current quantity is currently in stock, the order is fulfilled, the total purchase price will be displayed, and database will be updated.  However, if the requested quantity exceeds the amount available in inventory, then the order will not go through and you will be prompted to revise your order.  
 
 1) Upon first starting the program, the customer will be prompted to either "View items for sale" or to "Leave the store"
