@@ -13,7 +13,8 @@ Bamazon is an Amazon-like CLI application that will take in orders from customer
 The store includes three interconnected node applications--Customer Interface, Manager Interface, and Supervisor Interface.  All three programs interact with the same database on the backend.
 
 <h2>Customer Interface</h2>
-The Customer Interface (bamazonCustomer.js) allows you to view the current inventory of store items-IDs, descriptions, and departments.  You can the purhcase one of the instock items by entering the ID and quantity.  If the current quantity is currently in stock, the order is fulfilled, the total purchase price will be displayed, and database will be updated.  However, if the requested quantity exceeds the amount available in inventory, then the order will not go through and you will be prompted to revise your order.  
+<br>
+The Customer Interface (bamazonCustomer.js) allows you to view the current inventory of store items-IDs, descriptions, and departments.  You can the purhcase one of the in stock items by entering the ID and quantity.  If the current quantity is currently in stock, the order is fulfilled, the total purchase price will be displayed, and database will be updated.  However, if the requested quantity exceeds the amount available in inventory, then the order will not go through and you will be prompted to revise your order.  
 
 1) Upon first starting the program, the customer will be prompted to either "View items for sale" or to "Leave the store"
 
@@ -36,7 +37,12 @@ The Customer Interface (bamazonCustomer.js) allows you to view the current inven
 ![5](images/5.JPG)
 
 <h2>Manager Interface</h2>
-The Manager interface (bamazonManager.js)
+The Manager interface (bamazonManager.js) allows the user to view items for sale, view items with low inventory, add inventory, and also add completely new products to the store.
+
+![1]
+![2]
+![3]
+![4]
 
 <h2>Supervisor Interface</h2>
 The Supervisor Interface (bamazonSupervisor.js)
