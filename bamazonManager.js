@@ -69,9 +69,28 @@ function consoleTable(results) {
 		values.push(resultObject);
 	}
 	console.table("/nItems for Sale", values);
+	welcome();
 }
 
 // function to view low inventory
+function viewLowInvetory (results) {
+	var query = "SELECT * FROM products WHERE stock_quantity < 5";
+	connection.query(query, function(error, results) {
+		var values = [];
+		for (var i = 0; i < results.length; i++) {
+			var resultObject = {
+				ID: results[i].item_id,
+				Item: results[i].product_name,
+				Price: "$" + results[i].price,
+				Quantity: results[i].stock_quantity
+			};
+			values.push(resultObject);
+		}
+		console.table("/nItems for Sale", values);
+		welcome();
+	});
+}
+
 
 // function to exit store
 function exit() {
